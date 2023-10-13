@@ -54,13 +54,18 @@ h1 {
     margin-bottom: 3%;
     width: auto;
     float: left;
-    height: 330px;
+    height: 350px;
 
 }
 
 .iframe {
-    float: right;
+    display: block;
+    margin: 0 auto; /* Centre horizontalement */
+    text-align: center; /* Centre le contenu de l'iframe */
 }
+
+
+
 
 .html {
     position: absolute;
