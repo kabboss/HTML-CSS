@@ -140,6 +140,8 @@ input, select, button, file {
     animation: blinker 1s linear infinite;
     font-size: 50px;
     font-family: 'Times New Roman', Times, serif;
+    text-decoration: none;
+    color: #fff;
 }
 
 @keyframes blinker {
@@ -196,3 +198,11 @@ input, select, button, file {
 .im {
     padding: 10px;
 }
+
+
+
+
+
+
+
+

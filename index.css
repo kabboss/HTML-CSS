@@ -19,8 +19,16 @@ header img {
     max-width: 100%; /* Ajuste l'image à la largeur de l'écran */
 }
 
+header iframe {
+    max-width: 100%;
+}
+
 header {
     padding: 20px 0;
+}
+
+.mait {
+    width: 100%;
 }
 
 .forma {
@@ -42,8 +50,16 @@ h1 {
 }
 
 
-.baniere {
-    margin-bottom: 60%;
+.banier {
+    margin-bottom: 3%;
+    width: auto;
+    float: left;
+    height: 330px;
+
+}
+
+.iframe {
+    float: right;
 }
 
 .html {
@@ -69,10 +85,11 @@ h1 {
 
 
 nav {
-    background-color: #444;
-    color: #3b45d8;
-    text-align: center;
+    background-color: black;
+    color: #695a64;
+    text-align:left;
     font-size: 20px;
+    size: 500px;
 }
 
 nav ul {
@@ -82,13 +99,18 @@ nav ul {
 
 nav ul li {
     display: inline;
-    margin: 0 20px;
+    margin: 0 15px;
 }
 
 nav a {
     text-decoration: none;
-    color: #5cc0da;
+    color:#fff
 }
+
+nav a:hover {
+    background-color: #4dee24;
+}
+
 
 /* Vos autres styles restent inchangés, mais vous pouvez ajuster les largeurs, marges et tailles de police selon vos besoins pour une meilleure adaptation mobile. */
 
@@ -196,17 +218,91 @@ aside {
     font-size: 20px; /* Taille de la police à 30px */
     font-family: "Arial Black", Arial, sans-serif; /* Police Arial Black */
     animation: blinker 1s linear infinite; /* Fait clignoter le texte du bouton */
-}
-
-
-@keyframes blinker {
-    0%, 100% {
-        opacity: 1; /* Texte visible */
+    margin: 0 auto;
+    display: block; /* Ajuste la largeur du bouton en fonction de son contenu */
     }
-    40% {
-        opacity: 0; /* Texte invisible */
+    
+    @keyframes blinker {
+        0%, 100% {
+            opacity: 1;
+        }
+        40% {
+            opacity: 0;
+        }
     }
-}
+
+    aside {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Centre horizontalement */
+        justify-content: center; /* Centre verticalement sans espace vide */
+        background-color: #bbb; /* Couleur de fond */
+        width: 100%; /* Occupe toute la largeur de l'écran */
+        height: 57vh; /* Occupe toute la hauteur de l'écran */
+        text-align: center; /* Aligner le contenu au centre */
+    }
+    
+    .courses {
+        font-size: 20px;
+        color: #333; /* Couleur du texte */
+        text-align: justify;
+        margin-bottom: 20px; /* Espacement entre le titre et la liste */
+    }
+    
+    .courses ul {
+        list-style: none;
+        padding: 0;
+    }
+    
+    .courses li {
+        margin: 0;
+        padding: 0;
+        margin-bottom: 10px; /* Espacement entre les éléments de la liste */
+    }
+
+    .co {
+        font: optional;
+    }
+    
+    .pret {
+        font-size: 23px;
+        color: #333; /* Couleur du texte */
+        margin-bottom: 20px; /* Espacement entre le texte et le bouton */
+    }
+    
+    .payment-link {
+        background-color: #46e615; /* Couleur de fond du bouton */
+        color: #fff; /* Couleur du texte du bouton */
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+        font-size: 20px;
+        font-family: "Arial Black", Arial, sans-serif;
+        animation: blinker 1s linear infinite;
+    }
+    
+    @keyframes blinker {
+        0%, 100% {
+            opacity: 1;
+        }
+        40% {
+            opacity: 0;
+        }
+    }
+    
+    footer {
+        background-color: #007bff;
+        color: #fff;
+        text-align: center;
+        padding: 40px 0;
+    }
+
+    .fot {
+        font-size: 20px;
+    }
+
+    
+    
 
 
 

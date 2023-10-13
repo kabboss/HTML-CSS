@@ -26,10 +26,11 @@ header h1 {
 }
 
 nav {
-    background-color: #444;
-    color: #3b45d8;
-    text-align: center;
+    background-color: black;
+    color: #695a64;
+    text-align:left;
     font-size: 20px;
+    size: 500px;
 }
 
 nav ul {
@@ -39,12 +40,16 @@ nav ul {
 
 nav ul li {
     display: inline;
-    margin: 0 20px;
+    margin: 0 15px;
 }
 
 nav a {
     text-decoration: none;
-    color: #5cc0da;
+    color:#fff
+}
+
+nav a:hover {
+    background-color: #4dee24;
 }
 main {
     max-width: 800px;
@@ -72,15 +77,9 @@ iframe {
     border-radius: 5px;
 }
 
-/* Ajoutez d'autres styles au besoin */
-.modul {
-    text-align: center;
-    font-size: 40px;
-    font-family: Arial Black;
-}
-
 .TP {
     text-align: center;
     font-size: 40px;
     font-family: Arial Black; 
 }
+
