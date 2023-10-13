@@ -198,9 +198,6 @@ aside {
     animation: blinker 1s linear infinite; /* Fait clignoter le texte du bouton */
 }
 
-#toggleButton:hover {
-    background-color: #0056b3;
-}
 
 @keyframes blinker {
     0%, 100% {
