@@ -20,9 +20,9 @@ header h1 {
 
 nav {
     background-color: #444;
-    color: #fff;
+    color: #3b45d8;
     text-align: center;
-    font-size: 30px;
+    font-size: 20px;
 }
 
 nav ul {
@@ -37,7 +37,7 @@ nav ul li {
 
 nav a {
     text-decoration: none;
-    color: #c4eb39;
+    color: #5cc0da;
 }
 main {
     max-width: 800px;
@@ -47,8 +47,85 @@ main {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
 }
+.cont {
+    padding: 15px 0;
+}
+
+.bout {
+    padding: 25px 40px;
+    margin-top: 0;
+    background-color: #3b45d8;
+   
+} 
+
 
 .paie {
+    text-decoration: none;
     font-size:35px ;
+    color: #fff;
+    animation: blinker 1s linear infinite; /* Fait clignoter le texte du bouton */
 }
+
+
+@keyframes blinker {
+    0%, 100% {
+        opacity: 1; /* Texte visible */
+    }
+    40% {
+        opacity: 0; /* Texte invisible */
+    }
+}
+
+.promo-text {
+    color: hwb(23 1% 96%); /* Couleur orange pour attirer l'attention */
+    font-size: 24px; /* Taille de police plus grande */
+    font-weight: bold; /* Texte en gras */
+    font-family: "Arial Black", Arial, sans-serif; /* Police Arial Black ou autre police attrayante */
+}
+
+.promo-text:hover {
+    animation: shake 0.5s ease infinite; /* Ajoute une animation de secousse au survol */
+}
+
+@keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(5px); }
+    50% { transform: translateX(0); }
+    75% { transform: translateX(-5px); }
+    100% { transform: translateX(0); }
+}
+
+.discount-price{
+    font-size: 40px;
+}
+
+.original-price {
+    font-size: 34px;
+    text-decoration: line-through;
+    color: crimson;
+    
+}
+
+.discount-price strong {
+    color: #00cc00; /* Couleur verte claire pour le texte du prix de réduction */
+    animation: blinker 1s linear infinite; /* Fait clignoter le texte du prix de réduction */
+}
+
+@keyframes blinker {
+    0%, 100% {
+        opacity: 1; /* Texte visible */
+    }
+    50% {
+        opacity: 0; /* Texte invisible */
+    }
+}
+
+
+
+
+
+
+
+
+
 

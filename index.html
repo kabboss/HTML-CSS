@@ -3,34 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Apprenez à créer des sites webs modernes adaptés aux mobiles de A à Z, devenez développeur web !">
+    <meta name="title" content="Formation HTML et CSS (pour les débutants)">
+    <meta name="medium" content="mult">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="google-play-app" content="app-id=com.udemy.android">
+    <meta property="fb:app_id" content="61552545170578">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
     <title>Formation HTML/CSS</title>
-    <link rel="stylesheet" href="formation.css">
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
     <header>
         <p class="forma">Formation HTML/CSS</p>
-        <img src="img/baniere.jpg" alt="">
+        <img src="img/baniere.jpg" alt="" class="banier">
     </header>
-
+<div>
     <nav>
         <ul>
             <li><a href="index.html">Accueil</a></li>
-            <li><a href="A-propos.html">À Propos</a></li>
             <li><a href="contact.html">Contact</a></li>
+            <li><a href="A-propos.html">À Propos</a></li>
+
         </ul>
     </nav>
-    <main>
+
+</div>
+   
+    <div class="vid">
         <iframe src="video/Pr_coder.mp4" frameborder="0" class="video-bottom-left"></iframe>
-        <div class="payment-link">
-            <a href="paiement.html" class="blink">Payer ma formation à 2$ soit environ 1200 Fcfa</a>
-        </div>
+        <section class="main-content"> 
+
+            <button id="toggleButton" class="quoi">C'est quoi le HTML et le CSS ?</button>
+            <section class="main-content" id="content">
+                <p class="about">
+                    HTML (Hypertext Markup Language) et CSS (Cascading Style Sheets) sont deux langages essentiels utilisés pour créer des pages web et concevoir leur apparence.
         
-        <section>
-            <p class="about">
-                Le but de cette formation en ligne est de permettre aux apprenants, qu'ils soient débutants ou souhaitent améliorer leurs compétences, de maîtriser les fondamentaux du langage HTML et CSS, essentiels pour le développement web. Notre objectif est de fournir une expérience d'apprentissage interactive, flexible et abordable, les aidant à créer des sites web attrayants et fonctionnels tout en leur ouvrant des opportunités dans le monde de la programmation web.
-            </p>
-        </section>
-    </main>
+                    HTML est le langage de balisage utilisé pour structurer le contenu d'une page web. Il permet de définir les éléments de base d'une page, tels que les titres, les paragraphes, les images, les liens hypertextes, les listes, les formulaires, etc. En utilisant des balises HTML, vous indiquez au navigateur web comment afficher et organiser ces éléments sur la page. Par exemple, pour créer un titre, vous utilisez la balise <h1> pour indiquer que le texte à l'intérieur est un titre de niveau 1.
+        
+                    CSS, en revanche, est un langage de style qui permet de contrôler l'apparence et la mise en page des éléments HTML. Avec CSS, vous pouvez définir la couleur, la police, la taille du texte, la position, la marge, le remplissage, etc. des éléments HTML. Cela vous permet de personnaliser le design de votre site web de manière plus précise. Par exemple, vous pouvez utiliser des règles CSS pour spécifier que tous les titres de niveau 1 (<h1>) doivent être de couleur rouge, avoir une certaine police et être centrés sur la page.
+        
+                    En résumé, HTML est utilisé pour structurer le contenu d'une page web, tandis que CSS est utilisé pour contrôler l'apparence et la mise en page de ce contenu. Ensemble, ils permettent de créer des sites web avec du contenu bien organisé et un design attrayant.
+                </p>
+            </section>
+            <script>
+                const toggleButton = document.getElementById("toggleButton");
+                const content = document.getElementById("content");
+                content.style.display = "none"; // Masque la section par défaut
+        
+                toggleButton.addEventListener("click", function() {
+                    if (content.style.display === "none") {
+                        content.style.display = "block";
+                    } else {
+                        content.style.display = "none";
+                    }
+                });
+            </script>
+    </div>
     
     <aside>
         <section class="courses">
@@ -45,6 +77,14 @@
             </ul>
         </section>
     </aside>
+    <div class="pret">
+        <p><strong>Tu est Pret à apprendre ?😎</strong> </p>
+    </div>
+
+    <button class="payment-link">
+        <a href="cour_gra.html" class="blink">commençons!!</a>
+    </button>
+    
     <footer>
         
     </footer>

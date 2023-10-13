@@ -29,7 +29,7 @@ nav {
     background-color: #444;
     color: #3b45d8;
     text-align: center;
-    font-size: 30px;
+    font-size: 20px;
 }
 
 nav ul {
@@ -44,9 +44,8 @@ nav ul li {
 
 nav a {
     text-decoration: none;
-    color: #c4eb39;
+    color: #5cc0da;
 }
-
 html, body {
     height: 100%;
     display: flex;
@@ -99,7 +98,11 @@ button#copy-bitcoin, button#copy-usdt, button#copy-tron {
 }
 
 .option {
-    font-size: 30px;
+    font-size: 20px;
+}
+
+.payment-details {
+    font-size: 15px;
 }
 
 p {
@@ -148,6 +151,7 @@ input, select, button, file {
 .cour {
     font-size: 25px;
     font-family: Arial black;
+    text-align:left;
 }
 
 .social-icons {
@@ -177,10 +181,18 @@ input, select, button, file {
     }
 }
 
-.cripto {
+.crip {
     float: left;
 }
 
-.orange {
+.oran {
     float: right;
+}
+
+.address {
+    font-size: 5px;
+}
+
+.im {
+    padding: 10px;
 }

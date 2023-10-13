@@ -27,9 +27,9 @@ header h1 {
 
 nav {
     background-color: #444;
-    color: #fff;
+    color: #3b45d8;
     text-align: center;
-    font-size: 30px;
+    font-size: 20px;
 }
 
 nav ul {
@@ -44,9 +44,8 @@ nav ul li {
 
 nav a {
     text-decoration: none;
-    color: #c4eb39;
+    color: #5cc0da;
 }
-
 main {
     max-width: 800px;
     margin: 20px auto;
