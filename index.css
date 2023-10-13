@@ -39,6 +39,16 @@ header {
     
 }
 
+.ace {
+    background-color: aliceblue;
+    padding: 7px;
+}
+ .ace a {
+    color: black;
+    font-size:18px ;
+    font-family: Arial Black;
+ }
+
 ul {
     margin: 0;
     padding: 0;
