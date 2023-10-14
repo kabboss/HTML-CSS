@@ -14,18 +14,37 @@
     
     <header>
         <p class="forma">Formation HTML/CSS</p>
+        
+    <section>
+        
+    </section>
         <div class="ace">
-            <nav class="ace">
-                <ul>
+            <nav class="hamburger-menu">
+                <div class="menu-icon" id="menuIcon">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+                <ul class="menu-list">
                     <li class="acceuil"><a href="index.html">Accueil</a></li>
                     <li><a href="contact.html">Contact</a></li>
                     <li><a href="A-propos.html">À Propos</a></li>
-        
                 </ul>
             </nav>
-        
         </div>
+        <script>
+            const menuIcon = document.getElementById('menuIcon');
+    const menuList = document.querySelector('.menu-list');
+    
+    menuIcon.addEventListener('click', function () {
+        menuList.style.display = menuList.style.display === 'block' ? 'none' : 'block';
+    });
+    
+        </script>
+    </body>
+    <div class="fix">
         <img src="img/baniere.jpg" alt="" class="banier" style="width: 100%;">
+    </div>
         <iframe width="560" height="300" src="https://www.youtube.com/embed/8LPTY1eVuks?si=Zd6z_ZCybnWGd3Hz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen  class="iframe"></iframe>    
     </header> 
     <br>
