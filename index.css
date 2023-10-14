@@ -357,25 +357,6 @@ aside {
         list-style: none;
         padding: 0;
         display: none;
-    }
-    
-    .menu-list li {
-        padding: 10px;
-        text-align: center;
-        display: inline;
-        margin: 0 20px;
-    }
-    
-    .menu-list a {
-        text-decoration: none;
-        color: #fff;
-    }
-    
-    
-    .menu-list {
-        list-style: none;
-        padding: 0;
-        display: none;
         text-align: center; /* Centre le texte horizontalement */
     }
     
@@ -386,7 +367,9 @@ aside {
     .menu-list a {
         text-decoration: none;
         color: #fff;
+        margin: 0 -10px
     }
+    
     
     
     
